@@ -1,4 +1,9 @@
 module.exports = ({ env }) => ({
+  'users-premissions': {
+    config: {
+      jwtSecret: process.env.JWT_SECRET || 'dh24b928-5028d-47cd-b517-fbbf1a6ae696'
+    }
+  },
   upload: {
     provider: 'cloudinary',
     providerOptions: {
