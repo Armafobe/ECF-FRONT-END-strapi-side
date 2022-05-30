@@ -1,4 +1,11 @@
 module.exports = ({ env }) => ({
+  'users-permissions': {
+    config: {
+      jwt: {
+        jwtSecret: crypto.randomBytes(16).toString('base64');
+      }
+    }
+  },  
   upload: {
     provider: 'cloudinary',
     providerOptions: {
