@@ -1,17 +1,14 @@
 module.exports = ({ env }) => ({
-  'users-permissions': {
-    config: {
-      jwt: {
-        jwtSecret: Crypto.randomBytes(16).toString('base64')
-      }
-    }
-  },  
   upload: {
     provider: 'cloudinary',
     providerOptions: {
-      cloud_name: env('ddpzg3wel'),
-      api_key: env('292863883274299'),
-      api_secret: env('Wx_822oHzus9ESEk1etSpe-Z_iI'),
+      cloud_name: env('CLOUDINARY_NAME'),
+      api_key: env('CLOUDINARY_KEY'),
+      api_secret: env('CLOUDINARY_SECRET'),
+    },
+    actionOptions: {
+      upload: {},
+      delete: {},
     },
   },
 })
