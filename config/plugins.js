@@ -1,4 +1,4 @@
-export default ({ env }) => ({
+module.exports = ({ env }) => ({
   'users-permissions': {
     config: {
       jwt: {
@@ -14,4 +14,4 @@ export default ({ env }) => ({
       api_secret: env('Wx_822oHzus9ESEk1etSpe-Z_iI'),
     },
   },
-});
+})
