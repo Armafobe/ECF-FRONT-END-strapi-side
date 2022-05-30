@@ -1,6 +1,8 @@
 module.exports = ({ env }) => ({
   'users-permissions': {
-      jwt: process.env.JWT_SECRET || 'uTEK+1KkTFyO71kWT7saOA=='
+    config: {
+      jwtSecret: process.env.JWT_SECRET || 'uTEK+1KkTFyO71kWT7saOA=='
+    }
   },
   upload: {
     provider: 'cloudinary',
