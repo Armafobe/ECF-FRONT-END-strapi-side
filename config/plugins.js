@@ -1,7 +1,7 @@
 module.exports = ({ env }) => ({
   'users-permissions': {
     config: {
-      jwtSecret: process.env.JWT_SECRET || 'uTEK+1KkTFyO71kWT7saOA=='
+      jwtSecret: 'uTEK+1KkTFyO71kWT7saOA=='
     }
   },
   upload: {
