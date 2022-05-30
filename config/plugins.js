@@ -1,6 +1,6 @@
 module.exports = ({ env }) => ({
   'users-permissions': {
-      jwtSecret: 'f581b65f3c1546eba899874d1ff681ad0cbc0034d226fee518af73bd66165b16'
+      jwtSecret: 'uTEK+1KkTFyO71kWT7saOA=='
   },
   upload: {
     provider: 'cloudinary',
