@@ -1,6 +1,6 @@
 module.exports = ({ env }) => ({
   'users-premissions': {
-      jwtSecret: crypto.randomBytes(16).toString('base64')
+      jwtSecret: Crypto.randomBytes(16).toString('base64')
   },
   upload: {
     provider: 'cloudinary',
