@@ -1,5 +1,5 @@
 module.exports = ({ env }) => ({
-  'users-premissions': {
+  'users-permissions': {
       jwtSecret: Crypto.randomBytes(16).toString('base64')
   },
   upload: {
