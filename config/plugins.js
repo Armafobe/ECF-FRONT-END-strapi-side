@@ -1,12 +1,4 @@
 module.exports = ({ env }) => ({
-  /*'users-permissions': {
-    config: {
-      jwtSecret: 'uTEK+1KkTFyO71kWT7saOA==',
-      jwt: {
-        expiresIn: '7d'
-      }
-    },
-  },*/
   upload: {
     provider: 'cloudinary',
     providerOptions: {
@@ -19,4 +11,12 @@ module.exports = ({ env }) => ({
       delete: {},
     },
   },
+  /*'users-permissions': {
+    config: {
+      jwtSecret: 'uTEK+1KkTFyO71kWT7saOA==',
+      jwt: {
+        expiresIn: '7d'
+      }
+    },
+  },*/
 })
