@@ -1,3 +1,3 @@
 module.exports = ({ env }) => ({
-  jwtSecret: 'uTEK+1KkTFyO71kWT7saOA=='
+  jwtSecret: process.env.JWT_SECRET || 'uTEK+1KkTFyO71kWT7saOA=='
 })
