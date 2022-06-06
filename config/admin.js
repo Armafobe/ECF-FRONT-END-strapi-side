@@ -1,4 +1,5 @@
 module.exports = ({ env }) => ({
+  url: '/',
   apiToken: {
     salt: env('API_TOKEN_SALT', 'wQHTDU1GaTi4YhVWxdFC8w=='),
   },
