@@ -1,8 +1,8 @@
 module.exports = ({ env }) => ({
   apiToken: {
-    salt: env('API_TOKEN_SALT', 'dqz54384f8348fsf4s39fs2fs3ef51s8e4'),
+    salt: env('API_TOKEN_SALT', '0910aa4f4849e4cdb0e2bebffdd9fab05e46dff5b1c275453d8ad267bbf3f17eec02351d877e90b385b2dd7038b90903f027ed2718ac9db3614b68203197f64b111ff89383cc2ec44e5bdf96bd7255b1d331cede1da03f511c384e9aec112d7c762f3a64a78dd0adf1769b014313d002d92ed3ce72c9b20e69e21c37fd7108b0'),
   },
   auth: {
-    secret: env('ADMIN_JWT_SECRET', 'd1838bb10cede4205ad9420ae59ed191'),
+    secret: env('ADMIN_JWT_SECRET', '06ed529f2589296a9c5713be8a399c8edb51cb7f1d10685ac89e2180a0524aefbd5e1f6f7555e3b013e9a09c28bef82970ce3c5f5345598d0989e65427fb282e04dc9fa4f691602352c8bb421f6aa9c84a4bd7e6559f68f9a10b2aecaaea6d4868176d456ba7af754a3b7bb60d34226cd297890ad38fe7b86e957aad01db1d9e'),
   },
 });
