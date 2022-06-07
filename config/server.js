@@ -1,3 +1,3 @@
 module.exports = ({ env }) => ({
-  url: env("MY_URL"),
+  url: process.env.MY_URL,
 });
