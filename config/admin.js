@@ -1,5 +1,4 @@
-module.exports = ({ env }) => ({
-  url: '/',
+/*module.exports = ({ env }) => ({
   apiToken: {
     salt: env('API_TOKEN_SALT', 'wQHTDU1GaTi4YhVWxdFC8w=='),
   },
@@ -7,4 +6,4 @@ module.exports = ({ env }) => ({
     secret: env('ADMIN_JWT_SECRET', 'uTEK+1KkTFyO71kWT7saOA=='),
   },
 });
-  
+  */

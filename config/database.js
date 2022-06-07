@@ -1,7 +1,21 @@
 //const path = require('path');
 
-module.exports = ({ env }) => {
-  if (env("NODE_ENV") === "production") {
+module.exports = ({ env }) => ({
+  defaultConnection: "default",
+  connections: {
+    default: {
+      connector: "bookshelf",
+      settings: {
+        client: "sqlite",
+        filename: env("DATABASE_FILENAME", ".tmp/data.db"),
+      },
+      options: {
+        useNullAsDefault: true,
+      },
+    },
+  }
+});
+  /* if (env("NODE_ENV") === "production") {
     return {
       connection: {
         client: "postgres",
@@ -20,15 +34,5 @@ module.exports = ({ env }) => {
         debug: false,
       },
     };
-  }
+  }*/
 
-    return {
-      connection: {
-        client: 'sqlite',
-        connection: {
-          filename: path.join(__dirname, '..', env('DATABASE_FILENAME', '.tmp/data.db')),
-        },
-        useNullAsDefault: true,
-      },
-    };
-  };
