@@ -1,8 +1,8 @@
 module.exports = ({ env }) => ({
   apiToken: {
-    salt: process.env.API_TOKEN_SALT,
+    salt: env("API_TOKEN_SALT", "12345678987654321"),
   },
   auth: {
-    secret: process.env.ADMIN_JWT_SECRET,
+    secret: env("ADMIN_JWT_SECRET", "98765432123456789"),
   },
 });
