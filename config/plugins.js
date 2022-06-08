@@ -1,14 +1,16 @@
 module.exports = ({ env }) => ({
   upload: {
-    provider: 'cloudinary',
-    providerOptions: {
-      cloud_name: "hgy127cen",
-      api_key: "454849887759814",
-      api_secret: "SIrs0XobiGUpc365lXo_pOAOi2c",
-    },
-    actionOptions: {
-      upload: {},
-      delete: {},
+    config: {
+      provider: 'cloudinary',
+      providerOptions: {
+        cloud_name: env("CLOUDINARY_NAME"),
+        api_key: env("CLOUDINARY_KEY"),
+        api_secret: env("CLOUDINARY_SECRET"),
+      },
+      actionOptions: {
+        upload: {},
+        delete: {},
+      },
     },
   },
   'users-permissions': {
